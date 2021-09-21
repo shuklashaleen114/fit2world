@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>FitWorld</title>
+
+    <style>
+        .about {
+            width: 320px;
+            padding: 20px;
+            border: 5px solid rgb(30, 7, 163);
+            margin-top: 150;
+            margin-left: 150;
+            background-color: aqua;
+        }
+
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(238, 8, 8);
+            text-align: center;
+        }
+
+        body{
+            background-image: ;
+        }
+        .bg
+        
+{
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	z-index: -50;
+	opacity: 0.7;
+}
+    </style>
+
+</head>
+
+<body>
+   
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FitWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="workout_guide.html">Workout Guide</a></li>
+                            <li><a class="dropdown-item" href="diet.html">Diet Guide</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="bmi.html">BMI Counter</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                
+                <div class="mx-2">
+                    <a class="btn btn-success" href="login.html">Login</a>
+                    <a class="btn btn-success" href="signup.html">SignUp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <class class="container">
+
+        <form oninput="bmi.value=(parseFloat(P.value)*parseFloat(R.value)*parseFloat(N.value))/100" align="center">
+            <table align="center">
+                <tr>
+                    <th>
+                        Enter Amoun:
+                    </th>
+                    <th>
+                        <input type="text" id="P" placeholder="in kg">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Enter percentage
+                    </th>
+                    <th>
+                        <input type="text" id="R" placeholder="in meter">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Enter years
+                    </th>
+                    <th>
+                        <input type="text" id="N" placeholder="in meter">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <b>
+                            Your Result is:
+                        </b>
+                    </th>
+                    <th>
+                        <output name="bmi" for="s1 s2 s3">
+                        </output>
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <table align="center" border="1">
+            <tr>
+                <th>
+                    Range
+                </th>
+                <th>
+                    Body Mass Category
+                </th>
+                <th>
+                    Diet
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    0-15
+                </td>
+                <td>
+                    Very severely underweight
+                </td>
+                <td>
+                    <a href="Diet/Weight Gain.pdf">
+                        Get Diet for Weight Gain
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    15-16
+                </td>
+                <td>
+                    Severely underweight
+                </td>
+                <td>
+                    <a href="Diet/Weight Gain.pdf">
+                        Get Diet for Weight Gain
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    16-18.5
+                </td>
+                <td>
+                    Underweight
+                </td>
+                <td>
+                    <a href="Diet/Weight Gain.pdf">
+                        Get Diet for Weight Gain
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    18.5-25
+                </td>
+                <td>
+                    Normal (Healthy)
+                </td>
+                <td>
+                    <a href="Diet/Healthy.pdf">
+                        Get Diet for Healthy Life
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    25-30
+                </td>
+                <td>
+                    Overweight
+                </td>
+                <td>
+                    <a href="Diet/Weight Loss.pdf">
+                        Get Diet for Weight Loss
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    30-35
+                </td>
+                <td>
+                    Obese Class I (Moderately obese)
+                </td>
+                <td>
+                    <a href="Diet/Weight Loss.pdf">
+                        Get Diet for Weight Loss
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    35-40
+                </td>
+                <td>
+                    Obese Class II (Severely obese)
+                </td>
+                <td>
+                    <a href="Diet/Weight Loss.pdf">
+                        Get Diet for Weight Loss
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    >40
+                </td>
+                <td>
+                    Obese Class III (Very severely obese)
+                </td>
+                <td>
+                    <a href="Diet/Weight Loss.pdf">
+                        Get Diet for Weight Loss
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+    </class>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
